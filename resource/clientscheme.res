@@ -2917,7 +2917,51 @@ Scheme
 			}
 		}
 
-		NeufreitRegular12
+		        NeufreitRegular6
+		{
+			"1"
+			{
+				"name"		"Neufreit"
+				"tall"		"6"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+			    NeufreitRegular8
+		{
+			"1"
+			{
+				"name"		"Neufreit"
+				"tall"		"8"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+
+		        NeufreitRegular10
+		{
+			"1"
+			{
+				"name"		"Neufreit"
+				"tall"		"10"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+
+		        NeufreitRegular12
+		{
+			"1"
+			{
+				"name"		"Neufreit"
+				"tall"		"12"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+				NeufreitRegular14
 		{
 			"1"
 			{
@@ -2934,6 +2978,17 @@ Scheme
 			{
 				"name"		"Neufreit"
 				"tall"		"16"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+				NeufreitRegular18
+		{
+			"1"
+			{
+				"name"		"Neufreit"
+				"tall"		"18"
 				"weight"	"500"
 				"antialias" "1"
 			}
@@ -2993,13 +3048,57 @@ Scheme
 				"antialias" "1"
 			}
 		}
+
+		       NeufreitBold6
+		{
+			"1"	
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"6"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
 		
-			   NeufreitBold12
+		       NeufreitBold8
+		{
+			"1"	
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"8"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+			   NeufreitBold10
+		{
+			"1"	
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"10"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+		       NeufreitBold12
+		{
+			"1"	
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"12"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+				NeufreitBold14
 		{
 			"1"
 			{
 				"name"		"Neufreit Bold"
-				"tall"		"12"
+				"tall"		"14"
 				"weight"	"500"
 				"antialias" "1"
 			}
@@ -3016,12 +3115,45 @@ Scheme
 			}
 		}
 		
+			   NeufreitBold18
+		{
+			"1"
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"18"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
 			   NeufreitBold24
 		{
 			"1"
 			{
 				"name"		"Neufreit Bold"
 				"tall"		"24"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		
+			    NeufreitBold26
+		{
+			"1"
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"26"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+	
+				NeufreitBold28
+		{
+			"1"
+			{
+				"name"		"Neufreit Bold"
+				"tall"		"28"
 				"weight"	"500"
 				"antialias" "1"
 			}

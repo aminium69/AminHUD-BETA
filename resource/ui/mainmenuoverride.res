@@ -170,7 +170,7 @@
 		"zpos"			"-200"
 		"wide"			"o1.6"
 		"tall"			"f0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			""
 		"scaleImage"	"1"
@@ -233,10 +233,10 @@
 		"xpos"			"c-290"
 		"ypos"			"32"
 		"zpos"			"1"
-		"wide"			"256"
-		"tall"			"64"
-		"visible"		"1"
-		"enabled"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"../logo/new_tf2_logo"
 		"scaleImage"	"1"
 		"mouseinputenabled"	"0"
@@ -249,23 +249,22 @@
 		"xpos"			"c-250"
 		"ypos"			"-80"
 		"zpos"			"-99"
-		"wide"			"600"
-		"tall"			"600"
-		"visible"		"1"
-		"enabled"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"
 	}
 
 	"RankModelPanel"
 	{
-		"ControlName"	"CPvPRankPanel"
+		"ControlName"	"CPvPRankPanel"           // RANK / MEDAL
 		"fieldName"		"RankModelPanel"
-		"xpos"			"cs-0.5-256"
-		"ypos"			"cs-0.5-120"
-
+		"xpos"			"cs-0.5-385"
+		"ypos"			"cs-0.5-165"
 		"zpos"			"-51"
-		"wide"			"1000"
-		"tall"			"1000"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"0"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"1"
@@ -275,14 +274,14 @@
 		"show_progress"	"0"
 	}
 
-	"CycleRankTypeButton"
+	"TypeButton"
 	{
-		"ControlName"	"CExImageButton"
+		"ControlName"	"CExImageButton"        // idk
 		"fieldName"		"CycleRankTypeButton"
-		"xpos"			"cs-0.5-44"
-		"ypos"			"cs-0.5-134"
-		"wide"			"15"
-		"tall"			"15"
+		"xpos"			"55"
+		"ypos"			"60"
+		"wide"			"10"
+		"tall"			"10"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -348,10 +347,11 @@
 	
 	"RankPanel"
 	{
-		"ControlName"	"CPvPRankPanel"
+		"ControlName"	"CPvPRankPanel"    // This is the XP bar
 		"fieldName"		"RankPanel"
-		"xpos"			"c-350"
-		"ypos"			"72"
+		"font"          "NeufreitBold16"
+		"xpos"			"c-520"
+		"ypos"			"65"
 		"zpos"			"-52"
 		"wide"			"320"
 		"tall"			"100"
@@ -368,7 +368,7 @@
 	"NoGCMessage"
 	{
 		"ControlName"	"Label"
-		"fieldName"		"NoGCMessage"
+		"fieldName"		"NoGCMessage"   // fix later xbox things
 		"xpos"			"c-290"
 		"ypos"			"94"
 		"zpos"			"-99"
@@ -406,9 +406,9 @@
 
 	"RankBorder"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"EditablePanel"      // RANK BACKGROUND
 		"fieldName"		"RankBorder"
-		"xpos"			"c-290"
+		"xpos"			"9999"
 		"ypos"			"94"
 		"zpos"			"-100"
 		"wide"			"260"
@@ -477,7 +477,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c148"
+		"xpos"			"105"
 		"ypos"			"28"
 		"zpos"			"10"
 		"wide"			"32"
@@ -578,9 +578,9 @@
 
 	"WatchStreamButton"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"EditablePanel"        // This is the twitch category button
 		"fieldName"		"WatchStreamButton"
-		"xpos"			"c188"
+		"xpos"			"9999"
 		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
@@ -651,9 +651,9 @@
 
 	"QuestLogButton"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"EditablePanel"      // This is the contracker button
 		"fieldName"		"QuestLogButton"
-		"xpos"			"c228"
+		"xpos"			"34"
 		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
@@ -669,7 +669,7 @@
 
 		"SubButton"
 		{
-			"ControlName"	"CExImageButton"
+			"ControlName"	"CExImageButton"      // sub button = size ?
 			"fieldName"		"SubButton"
 			"xpos"			"0"
 			"ypos"			"0"
@@ -724,9 +724,9 @@
 	
 	"MOTD_ShowButtonPanel"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"EditablePanel"           // this is the mail / news button
 		"fieldName"		"MOTD_ShowButtonPanel"
-		"xpos"			"c268"
+		"xpos"			"70"
 		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
@@ -1173,8 +1173,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
-		"xpos"			"c0"
-		"ypos"			"102"
+		"xpos"			"150"
+		"ypos"			"20"
 		"zpos"			"10"
 		"wide"			"210"
 		"tall"			"80"
@@ -1376,11 +1376,24 @@
 		"visible"		"0"
 	}
 
-	"FriendsContainer"
+	"TargetBGshade"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"								"ImagePanel"
+		"fieldName"									"TargetBGshade"
+		"xpos"										"0"
+		"ypos"										"7"
+		"zpos"										"-1"
+		"wide"										"290"
+		"tall"										"500"
+		"visible"									"1"
+		"enabled"									"1"
+		"fillcolor"									"0 0 0 100"
+    }
+	"FriendsContainer"
+	{ 
+		"ControlName"	"EditablePanel"     // This is the friends box
 		"fieldname"		"FriendsContainer"
-		"xpos"			"c-290"
+		"xpos"			"20"
 		"ypos"			"260"
 		"zpos"			"5"
 		"wide"			"260"
@@ -1393,7 +1406,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"NeufreitBold24"
 			"labelText"		"#TF_Competitive_Friends"
 			"textAlignment"	"west"
 			"xpos"			"12"
@@ -1504,9 +1517,9 @@
 
 	"EventPromo"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"EditablePanel"    // Featured BOX
 		"fieldname"		"EventPromo"
-		"xpos"			"c-290"
+		"xpos"			"9999"
 		"ypos"			"160"
 		"zpos"			"-50"
 		"wide"			"270"
@@ -2321,10 +2334,10 @@
 		"xpos"			"0"
 		"ypos"			"420"
 		"zpos"			"-50"
-		"wide"			"f0"
-		"tall"			"60"
-		"visible"		"1"
-		"enabled"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
 	}				
@@ -2335,58 +2348,42 @@
 		"xpos"			"0"
 		"ypos"			"420"
 		"zpos"			"-5-"
-		"wide"			"f0"
-		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"loadout_solid_line"
 		"scaleImage"	"1"
 	}	
 
-	"CharacterSetupButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"CharacterSetupButton"
-		"xpos"			"c-288"
-		"ypos"			"rs1-18"
-		"wide"			"100"
-		"tall"			"26"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"command"		"engine open_charinfo"
-		"labeltext"		"#MMenu_CharacterSetup"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"proportionaltoparent"	"1"
-			
-		"paintbackground"	"1"
-				
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_items"
-		}		
-	}
+"CharacterSetupButton"
+{
+    "ControlName" "CExImageButton"
+    "fieldName" "CharacterSetupButton"
+    "xpos" "20"
+    "ypos" "145"
+    "zpos" "20"
+    "wide" "100"
+    "tall" "25"
+    "visible" "1"
+    "enabled" "1"
+	"mouseinputenabled" "1"
+    "labelText" "ITEMS"
+    "font" "NeufreitBold16"
+    "textAlignment" "west"
+    "paintbackground" "0"
+
+    "fgcolor_override" "235 226 202 255"
+    "armedFgColor_override" "0 0 0 255"
+
+    "paintborder" "0"
+    "paintbackground" "0"
+
+    "Command" "opencharinfo"
+
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released" "UI/buttonclickrelease.wav"
+}
 
 	"StoreHasNewItemsImage"
 	{
@@ -2404,251 +2401,182 @@
 		"mouseinputenabled"	"0"
 	}
 
-	"GeneralStoreButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"GeneralStoreButton"
-		"xpos"			"c-165"
-		"ypos"			"rs1-18"
-		"wide"			"100"
-		"tall"			"26"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"labeltext" "#MMenu_Shop"
-		"command" "engine open_store"
-		"proportionaltoparent"	"1"
+"GeneralStoreButton"
+{
+    "ControlName" "CExImageButton"
+    "fieldName" "GeneralStoreButton"
+    "xpos" "20"
+    "ypos" "170"
+    "zpos" "1000"
+    "wide" "160"
+    "tall" "25"
+    "visible" "1"
+    "enabled" "1"
+    "mouseinputenabled" "1"
+    "keyboardinputenabled" "1"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-			
-		"paintbackground"	"1"
-				
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image" "glyph_store"
-		}		
-	}
+    "labelText" "STORE"
+    "font" "NeufreitBold16"
+    "textAlignment" "west"
 
-	"SettingsButtonSDK"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SettingsButtonSDK"
-		"xpos"			"c-34+273"
-		"ypos"			"437"
-		"zpos"			"4"
-		"wide"			"25"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"west"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"OpenOptionsDialog"
+    "paintbackground" "0"
+    "paintborder" "0"
+    "border_default" ""
 
-		"navUp"			"TF2SettingsButtonSDK"
-		"navLeft"		"TF2SettingsButtonSDK"
-		"navRight"		"TF2SettingsButtonSDK"
+    "fgcolor_override" "235 226 202 255"
+    "armedFgColor_override" "0 0 0 255"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-		}			
-	}
+    "Command" "OpenStoreDialog"
 
-	"TF2SettingsButtonSDK"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"TF2SettingsButtonSDK"
-		"xpos"			"c-0+273"
-		"ypos"			"437"
-		"zpos"			"5"
-		"wide"			"25"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"east"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"opentf2options"
-		"use_proportional_insets"	"1"
-		"textinsetx"	"25"
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released" "UI/buttonclickrelease.wav"
 
-		"navUp"			"SettingsButtonSDK"
-		"navLeft"		"SettingsButtonSDK"
-		"navRight"		"SettingsButtonSDK"
+    "SubImage"
+    {
+        "visible" "0"
+        "enabled" "0"
+    }
+}
+            "SettingsButtonSDK"
+{
+    "ControlName"    "CExImageButton"
+    "fieldName"      "SettingsButtonSDK"
+    "xpos"           "c-34+273"
+    "ypos"           "437"
+    "zpos"           "4"
+    "wide"           "120"
+    "tall"           "25"
+    "visible"        "1"
+    "enabled"        "1"
+    "labelText"      "SETTINGS"
+    "font"           "HudFontSmallBold"
+    "textAlignment"  "west"
+    "textinsetx"     "25"
+    "use_proportional_insets" "1"
+    "dulltext"       "0"
+    "brighttext"     "0"
+    "Command"        "OpenOptionsDialog"
+    "paintbackground" "0"  // removes default box
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-			"scaleImage"	"1"
-		}				
-	}
-	
-	"SettingsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SettingsButton"
-		"xpos"			"c-208+273"
-		"ypos"			"437"
-		"zpos"			"1"
-		"wide"			"30"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		""
-		"font"			"HudFontSmallBold"
-		"textAlignment"	"west"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"OpenOptionsDialog"
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released"  "UI/buttonclickrelease.wav"
 
-		"navUp"			"Notifications_Panel"
-		"navLeft"		"ReportBugButton"
-		"navRight"		"TF2SettingsButton"
+    "image_drawcolor" "235 226 202 255"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-		}			
-	}
+    "SubImage"
+    {
+        "ControlName" "ImagePanel"
+        "fieldName"   "SubImage"
+        "xpos"        "6"
+        "ypos"        "6"
+        "wide"        "14"
+        "tall"        "14"
+        "visible"     "1"
+        "enabled"     "1"
+        "scaleImage"  "1"
+        "image"       "glyph_options"
+    }
+}
 
-	"TF2SettingsButton"
-	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"TF2SettingsButton"
-		"xpos"			"c-183+273"
-		"ypos"			"437"
-		"zpos"			"2"
-		"wide"			"26"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"+"
-		"textAlignment"	"north-west"
-		"textinsetx"	"18"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"Command"		"opentf2options"
-		"use_proportional_insets"	"1"
+"TF2SettingsButtonSDK"
+{
+    "ControlName"    "CExImageButton"
+    "fieldName"      "TF2SettingsButtonSDK"
+    "xpos"           "c-0+273"
+    "ypos"           "437"
+    "zpos"           "5"
+    "wide"           "160"
+    "tall"           "25"
+    "visible"        "1"
+    "enabled"        "1"
+    "labelText"      "ADVANCED OPTIONS"
+    "font"           "NeufreitBold16"
+    "textAlignment"  "west"
+    "textinsetx"     "25"
+    "use_proportional_insets" "1"
+    "dulltext"       "0"
+    "brighttext"     "0"
+    "Command"        "opentf2options"
+    "paintbackground" "0"
 
-		"navUp"			"Notifications_Panel"
-		"navLeft"		"SettingsButton"
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released"  "UI/buttonclickrelease.wav"
 
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"border_default"	"MainMenuSubButtonBorder"
-		
-		"image_drawcolor"	"235 226 202 255"
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"6"
-			"ypos"			"6"
-			"zpos"			"1"
-			"wide"			"14"
-			"tall"			"14"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"glyph_options"
-			"scaleImage"	"1"
-		}				
-	}
-	
+    "image_drawcolor" "235 226 202 255"
+
+    "SubImage"
+    {
+        "ControlName" "ImagePanel"
+        "fieldName"   "SubImage"
+        "xpos"        "6"
+        "ypos"        "6"
+        "wide"        "14"
+        "tall"        "14"
+        "visible"     "1"
+        "enabled"     "1"
+        "scaleImage"  "1"
+        "image"       "glyph_options"
+    }
+}
+
+"SettingsButton"
+{
+    "ControlName" "CExImageButton"
+    "fieldName" "SettingsButton"
+    "xpos" "20"
+    "ypos" "195"
+    "wide" "160"                         // make sure it's wide enough for text
+    "tall" "25"
+    "visible" "1"
+    "enabled" "1"
+    "labelText" "SETTINGS"
+    "font" "NeufreitBold16"
+    "textAlignment" "west"
+    "paintbackground" "0"
+
+    // text colors
+    "fgcolor_override" "235 226 202 255"
+    "armedFgColor_override" "0 0 0 255"
+
+    // make sure it still runs
+    "Command" "OpenOptionsDialog"
+
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released" "UI/buttonclickrelease.wav"
+}
+
+"TF2SettingsButton"
+{
+    "ControlName" "CExImageButton"
+    "fieldName" "TF2SettingsButton"
+    "xpos" "20"
+    "ypos" "220"
+    "wide" "200"                         // bigger so full text shows
+    "tall" "25"
+    "visible" "1"
+    "enabled" "1"
+    "labelText" "ADVANCED OPTIONS"
+    "font" "NeufreitBold16"
+    "textAlignment" "west"
+    "paintbackground" "0"
+
+    // text colors
+    "fgcolor_override" "235 226 202 255"
+    "armedFgColor_override" "0 0 0 255"
+
+    // still functional
+    "Command" "opentf2options"
+
+    "sound_depressed" "UI/buttonclick.wav"
+    "sound_released" "UI/buttonclickrelease.wav"
+}
+
 	"NewUserForumsButton"
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"NewUserForumsButton"
-		"xpos"			"c-158+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"2"
 		"wide"			"30"
 		"tall"			"25"
@@ -2695,8 +2623,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"AchievementsButton"
-		"xpos"			"c-133+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"3"
 		"wide"			"30"
 		"tall"			"25"
@@ -2742,8 +2670,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CommentaryButton"
-		"xpos"			"c-108+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
 		"wide"			"30"
 		"tall"			"25"
@@ -2789,8 +2717,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CoachPlayersButton"
-		"xpos"			"c-83+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"5"
 		"wide"			"25"
 		"tall"			"25"
@@ -2836,8 +2764,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"WorkshopButton"
-		"xpos"			"c-63+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
 		"wide"			"30"
 		"tall"			"25"
@@ -2883,8 +2811,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ReplayButton"
-		"xpos"			"c-34+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"5"
 		"wide"			"25"
 		"tall"			"25"
@@ -2930,8 +2858,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ReportBugButton"
-		"xpos"			"c-14+273"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
 		"wide"			"30"
 		"tall"			"25"
@@ -2977,8 +2905,8 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"BackToReplaysButton"
-		"xpos"			"c-300"
-		"ypos"			"437"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"1"
 		"wide"			"170"
 		"tall"			"25"

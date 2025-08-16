@@ -206,25 +206,26 @@
 		"enabled"								"0"
 	}				
 	
-		"TeamIndicatorRed"
+		"TeamIndicatorBlu"
 	    {
 		"ControlName"	"CTFImagePanel"
-		"fieldName"		"TeamIndicatorRed"
-		"xpos"			"427"
+		"fieldName"		"TeamIndicatorBlu"
+		"xpos"			"380"
 		"ypos"			"-1"
 		"zpos"			"2"
-		"wide"			"45"
+		"wide"			"46"
 		"tall"	 		"9"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_red"
+		"image"			"../hud/color_panel_blu"
 		"scaleImage"	"1"
-		"teambg_2"		"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_blu"
 		"src_corner_height"		"40"
 		"src_corner_width"		"40"
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"
 	    }
+		
 	"TargetBGshade"
 	{
 		"ControlName"								"ImagePanel"
@@ -525,7 +526,7 @@
 			{	
 				"ControlName"					"CExLabel"
 				"fieldName"						"respawntime"
-				"font"							"NeufreitBold10"
+				"font"							"PlayerPanelPlayerName"
 				"xpos"							"cs-0.5"
 				"ypos"							"0"
 				"zpos"							"5"
