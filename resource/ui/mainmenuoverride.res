@@ -350,7 +350,7 @@
 		"ControlName"	"CPvPRankPanel"    // This is the XP bar
 		"fieldName"		"RankPanel"
 		"font"          "NeufreitBold16"
-		"xpos"			"c-520"
+		"xpos"			"c-525"
 		"ypos"			"65"
 		"zpos"			"-52"
 		"wide"			"320"
@@ -794,8 +794,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
-		"xpos"			"c5"
-		"ypos"			"65"
+		"xpos"			"290"
+		"ypos"			"130"
 		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"350"
@@ -1382,21 +1382,22 @@
 		"fieldName"									"TargetBGshade"
 		"xpos"										"0"
 		"ypos"										"7"
-		"zpos"										"-1"
+		"zpos"										"-1000"
 		"wide"										"290"
 		"tall"										"500"
 		"visible"									"1"
 		"enabled"									"1"
 		"fillcolor"									"0 0 0 100"
     }
+	
 	"FriendsContainer"
 	{ 
 		"ControlName"	"EditablePanel"     // This is the friends box
 		"fieldname"		"FriendsContainer"
 		"xpos"			"20"
-		"ypos"			"260"
+		"ypos"			"280"
 		"zpos"			"5"
-		"wide"			"260"
+		"wide"			"170"
 		"tall"			"150"
 		"visible"		"1"
 
@@ -1409,9 +1410,9 @@
 			"font"			"NeufreitBold24"
 			"labelText"		"#TF_Competitive_Friends"
 			"textAlignment"	"west"
-			"xpos"			"12"
+			"xpos"			"5"
 			"ypos"			"0"
-			"wide"			"f0"
+			"wide"			"f10"
 			"tall"			"30"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1428,11 +1429,11 @@
 			"xpos"			"cs-0.5"
 			"ypos"			"rs1-10"
 			"zpos"			"501"
-			"wide"			"f10"
+			"wide"			"200"
 			"tall"			"110"
 			"visible"		"1"	
 			"PaintBackgroundType"	"0"
-			"proportionaltoparent"	"1"
+			"proportionaltoparent"	"0"
 			"mouseinputenabled"	"0"
 
 			"paintborder"	"1"
@@ -1443,15 +1444,15 @@
 		{
 			"ControlName"	"CSteamFriendsListPanel"
 			"fieldname"		"SteamFriendsList"
-			"xpos"			"cs-0.5"
+			"xpos"			"cs-0.33"
 			"ypos"			"rs1-10"
 			"zpos"			"500"
-			"wide"			"f10"
+			"wide"			"260"
 			"tall"			"110"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
-			"columns_count"	"2"
+			"columns_count"	"1"
 			"inset_x"		"10"
 			"inset_y"		"5"
 			"row_gap"		"5"
@@ -2362,7 +2363,7 @@
     "fieldName" "CharacterSetupButton"
     "xpos" "20"
     "ypos" "145"
-    "zpos" "20"
+    "zpos" "1000"
     "wide" "100"
     "tall" "25"
     "visible" "1"
@@ -2373,13 +2374,14 @@
     "textAlignment" "west"
     "paintbackground" "0"
 
-    "fgcolor_override" "235 226 202 255"
-    "armedFgColor_override" "0 0 0 255"
+    "defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
 
     "paintborder" "0"
     "paintbackground" "0"
 
-    "Command" "opencharinfo"
+    "Command" "engine open_charinfo"
 
     "sound_depressed" "UI/buttonclick.wav"
     "sound_released" "UI/buttonclickrelease.wav"
@@ -2423,10 +2425,11 @@
     "paintborder" "0"
     "border_default" ""
 
-    "fgcolor_override" "235 226 202 255"
-    "armedFgColor_override" "0 0 0 255"
-
-    "Command" "OpenStoreDialog"
+    "defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
+	
+    "Command" "engine open_store"
 
     "sound_depressed" "UI/buttonclick.wav"
     "sound_released" "UI/buttonclickrelease.wav"
@@ -2519,12 +2522,13 @@
     }
 }
 
-"SettingsButton"
+"SettingsButtonNew1"
 {
     "ControlName" "CExImageButton"
-    "fieldName" "SettingsButton"
+    "fieldName" "SettingsButtonNew"
     "xpos" "20"
     "ypos" "195"
+	"zpos" "1000"
     "wide" "160"                         // make sure it's wide enough for text
     "tall" "25"
     "visible" "1"
@@ -2534,9 +2538,9 @@
     "textAlignment" "west"
     "paintbackground" "0"
 
-    // text colors
-    "fgcolor_override" "235 226 202 255"
-    "armedFgColor_override" "0 0 0 255"
+    "defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
 
     // make sure it still runs
     "Command" "OpenOptionsDialog"
@@ -2545,24 +2549,25 @@
     "sound_released" "UI/buttonclickrelease.wav"
 }
 
-"TF2SettingsButton"
+"TF2SettingsButtonNew2"
 {
     "ControlName" "CExImageButton"
-    "fieldName" "TF2SettingsButton"
+    "fieldName" "TF2SettingsButtonNew"
     "xpos" "20"
     "ypos" "220"
+	"zpos" "1000"
     "wide" "200"                         // bigger so full text shows
     "tall" "25"
     "visible" "1"
     "enabled" "1"
-    "labelText" "ADVANCED OPTIONS"
+    "labelText" "ADV. OPTIONS"
     "font" "NeufreitBold16"
     "textAlignment" "west"
     "paintbackground" "0"
 
-    // text colors
-    "fgcolor_override" "235 226 202 255"
-    "armedFgColor_override" "0 0 0 255"
+    "defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
 
     // still functional
     "Command" "opentf2options"
@@ -2618,6 +2623,28 @@
 			"scaleImage"	"1"
 		}				
 	}		
+	
+	"TestButton"
+{
+    "ControlName" "CExImageButton"
+    "fieldName"   "TestButton"
+	"font"        "NeufreitBold16"
+    "xpos" "20"
+    "ypos" "246"
+    "wide" "100"
+    "tall" "25"
+    "visible" "1"
+    "enabled" "1"
+    "mouseinputenabled" "1"
+    "labelText" "CONSOLE"
+    "Command" "engine showconsole"
+	"paintbackground" "0"
+	
+    "defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
+}	
+	
 	
 	"AchievementsButton"
 	{

@@ -64,14 +64,11 @@
 	{	
 		"ControlName"	"Label"
 		"fieldName"		"DisguiseNameLabel"
-		"font"			"HudFontMediumSmallSecondary"
-		"font_minmode"	"TFFontMedium"
+		"font"			"NeufreitBold16"
 		"xpos"			"52"
-		"xpos_minmode"	"34"
 		"ypos"			"31"
-		"ypos_minmode"	"51"
 		"zpos"			"1"
-		"wide"			"110"
+		"wide"			"160"
 		"tall"			"24"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -82,17 +79,14 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
-	
+
 	"WeaponNameLabel"
 	{	
 		"ControlName"	"Label"
 		"fieldName"		"WeaponNameLabel"
-		"font"			"HUDFontSmall"
-		"font_minmode"	"TFFontMedium"
+		"font"			"NeufreitBold14"
 		"xpos"			"52"
-		"xpos_minmode"	"34"
 		"ypos"			"45"
-		"ypos_minmode"	"58"
 		"zpos"			"1"
 		"wide"			"110"
 		"tall"			"24"

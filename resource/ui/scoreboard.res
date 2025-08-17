@@ -607,7 +607,7 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"Spectators"
-		"font"			"ScoreboardVerySmall"
+		"font"			"NeufreitBold8"
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
 		"xpos"			"115"
@@ -698,7 +698,7 @@
 		"ypos"			"185"
 		"zpos"			"10"		
 		"wide"			"130"
-		"tall"			"260"
+		"tall"			"250"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"

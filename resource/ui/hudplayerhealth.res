@@ -61,11 +61,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"999"	[$WIN32]
-		"ypos"			"999"	[$WIN32]
+		"xpos"			"9999"	[$WIN32]
+		"ypos"			"9999"	[$WIN32]
 		"zpos"			"2"
-		"wide"			"60"	[$WIN32]
-		"tall"			"60"	[$WIN32]
+		"wide"			"0"	[$WIN32]
+		"tall"			"0"	[$WIN32]
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/health_over_bg"
@@ -146,7 +146,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusMaxHealthValue"
-		"xpos"			"250"
+		"xpos"			"255"
 		"ypos"			"297"	[$WIN32]
 		"ypos"			"55"	[$X360]
 		"zpos"			"6"
@@ -156,9 +156,28 @@
 		"enabled"		"1"
 		"labelText"		"%MaxHealth%"
 		"textAlignment"	"center"	
-		"font"			"DefaultSmall"
+		"font"			"NeufreitBold16"
 		"fgcolor"		"237 230 210 255"
 	}
+	
+		"PlayerStatusMaxHealthValueBG"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusMaxHealthValueBG"
+		"xpos"			"255"
+		"ypos"			"297"	[$WIN32]
+		"ypos"			"55"	[$X360]
+		"zpos"			"6"
+		"wide"			"52"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%MaxHealth%"
+		"textAlignment"	"center"	
+		"font"			"NeufreitBold16"
+		"fgcolor"		"0 0 0 255"
+	}
+	
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"

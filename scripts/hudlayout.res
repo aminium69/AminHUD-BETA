@@ -239,10 +239,10 @@
 		"fieldName" 	"CMainTargetID"
 		"visible" 	"0"
 		"enabled" 	"1"
-		"xpos"		"c-126"
-		"ypos"		"290"
-		"wide"	 	"252"
-		"tall"	 	"35"
+		"xpos"		"0"
+		"ypos"		"270"
+		"wide"	 	"f0"
+		"tall"	 	"f0"
 		"priority"	"40"
 
 		if_vr
@@ -277,7 +277,7 @@
 		"xpos"		"c-126"
 		"ypos"		"300"
 		"wide"	 	"252"
-		"tall"	 	"35"
+		"tall"	 	"50"
 		"priority"	"35"
 
 		if_vr

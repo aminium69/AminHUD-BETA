@@ -44,6 +44,22 @@
 		"iconColor"		"ProgressOffWhite"
 	}
 	
+		"MetalIconBG"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"MetalIconBG"
+		"xpos"			"396"
+		"ypos"			"338"
+		"zpos"			"1"
+		"wide"			"11"
+		"tall"			"11"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_metal"
+		"iconColor"		"0 0 0 255"
+	}
+	
 	"AccountValue"
 	{
 		"ControlName"	"CExLabel"
@@ -53,6 +69,27 @@
 		"zpos"			"2"
 		"wide"			"50"
 		"tall"			"25"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%metal%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"NeufreitBold24"
+	}
+		"AccountValueBG"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AccountValueBG"
+		"fgcolor"       "0 0 0 255"
+		"xpos"			"403"
+		"ypos"			"330"
+		"zpos"			"2"
+		"wide"			"52"
+		"tall"			"27"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"

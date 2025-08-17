@@ -53,7 +53,49 @@
 		"brighttext"			"0"
 		"font"					"NeufreitBold12"
 	}
-
+		"ItemEffectMeterLabel"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterLabel"
+		"xpos"					"25"
+		"ypos"					"22"
+		"zpos"					"2"
+		"wide"					"41"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"#TF_Ball"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"NeufreitBold12"
+	}
+	
+			"ItemEffectMeterLabelBG"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterLabelBG"
+		"fgcolor"               "0 0 0 255"
+		"xpos"					"25"
+		"ypos"					"22"
+		"zpos"					"2"
+		"wide"					"44"
+		"tall"					"18"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"HEADS"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"NeufreitBold12"
+	}
+	
 	"ItemEffectMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
@@ -92,4 +134,25 @@
 		"brighttext"			"0"
 		"font"					"NeufreitBold24"
 	}
+		"ItemEffectMeterCountBG"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterCountBG"
+		"fgcolor"               "0 0 0 255"
+		"xpos"					"24"
+		"ypos"					"5"
+		"zpos"					"2"
+		"wide"					"43"
+		"tall"					"23"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"NeufreitBold24"
+	}
+
 }

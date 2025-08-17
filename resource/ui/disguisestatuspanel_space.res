@@ -75,7 +75,7 @@
 	{	
 		"ControlName"				"Label"
 		"fieldName"					"DisguiseNameLabel"
-		"font"						"Font14"
+		"font"						"NeufreitBold14"
 		"xpos"						"35"
 		"ypos"						"0"
 		"zpos"						"1"
@@ -90,12 +90,32 @@
 		"dulltext"					"0"
 		"brighttext"				"0"
 	}
+		"DisguiseNameLabelBG"
+	{	
+		"ControlName"				"Label"
+		"fieldName"					"DisguiseNameLabelBG"
+		"font"						"NeufreitBold18"
+		"fgcolor"                   "0 0 0 255"
+		"xpos"						"35"
+		"ypos"						"0"
+		"zpos"						"1"
+		"wide"						"137"
+		"tall"						"16"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+		"labelText"					"%disguisename%"
+		"textAlignment"				"West"
+		"dulltext"					"0"
+		"brighttext"				"0"
+	}
 	
 	"WeaponNameLabel"
 	{	
 		"ControlName"				"Label"
 		"fieldName"					"WeaponNameLabel"
-		"font"						"Font12"
+		"font"						"NeufreitBold14"
 		"xpos"						"35"
 		"ypos"						"14"
 		"zpos"						"1"

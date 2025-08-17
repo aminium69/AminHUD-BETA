@@ -68,7 +68,23 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"SpectatorVerySmall"
-		"fgcolor"		"TanDark"
+		"font"			"NeufreitBold10"
+		"fgcolor"		"255 255 255 255"
 	}								
+		"PlayerStatusHealthValueBG"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueBG"
+		"xpos"			"6"
+		"ypos"			"11"
+		"zpos"			"5"
+		"wide"			"22"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"	
+		"font"			"NeufreitBold10"
+		"fgcolor"		"0 0 0 255"
+	}							
 }
