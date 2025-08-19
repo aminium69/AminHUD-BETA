@@ -9,19 +9,34 @@
 		"zpos"			"0"
 		"wide"			"470"
 		"tall"			"170"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_bg"
 		"iconColor"		"255 255 255 255"
 	}
 
+	"TargetBGshade"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"TargetBGshade"
+		"xpos"										"0"
+		"ypos"										"7"
+		"zpos"										"-1"
+		"wide"										"460"
+		"tall"										"250"
+		"visible"									"1"
+		"enabled"									"1"
+		"fillcolor"									"0 0 0 100"
+	}
+
+
 	"Divider"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"Divider"
-		"xpos"			"8"
-		"ypos"			"65"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"1"
 		"wide"			"456"
 		"tall"			"2"

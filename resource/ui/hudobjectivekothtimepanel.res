@@ -103,7 +103,7 @@
 			"delta_lifetime"		"1.5"
 			"delta_item_font"		"NeufreitBold16"
 		}
-		
+
 		"TimePanelValue"
 		{
 			"ControlName"		"CExLabel"

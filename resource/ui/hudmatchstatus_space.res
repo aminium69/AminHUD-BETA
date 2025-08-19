@@ -225,7 +225,7 @@
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"
 	    }
-	"TargetBGshade"
+	"TargetBGShade"
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"TargetBGshade"
@@ -236,7 +236,7 @@
 		"tall"										"25"
 		"visible"									"1"
 		"enabled"									"1"
-		"fillcolor"									"0 0 0 100"
+		"fillcolor"									"0 0 0 190"
 	}
 	
 	"RankUpLabel"			

@@ -4,13 +4,13 @@
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"MainBackground"
-		"xpos"			"0"
-		"ypos"			"10"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"0"
 		"wide"			"450"
 		"tall"			"185"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_bg"
 		"iconColor"		"255 255 255 255"
@@ -96,8 +96,8 @@
 		"xpos"			"25"
 		"ypos"			"47"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
 	}	
 	

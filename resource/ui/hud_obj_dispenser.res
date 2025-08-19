@@ -15,6 +15,20 @@
 		"tabPosition"	"0"
 	}
 	
+			"TargetBGshade"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"TargetBGshade"
+		"xpos"										"0"
+		"ypos"										"7"
+		"zpos"										"-1"
+		"wide"										"120"
+		"tall"										"240"
+		"visible"									"1"
+		"enabled"									"1"
+		"fillcolor"									"0 0 0 150"
+	}
+
 	"Background"
 	{
 		"ControlName"	"CIconPanel"
@@ -24,8 +38,8 @@
 		"zpos"			"-1"
 		"wide"			"120"
 		"tall"			"31"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_background_disabled"
 		"iconColor"		"255 255 255 255"

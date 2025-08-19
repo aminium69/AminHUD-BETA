@@ -1,0 +1,7 @@
+r_decal_cullsize 1                // cull decals under 1px size
+exec joystick.cfg                // setup custom joystick controller
+exec autoexec.cfg                // run user script file
+exec myhud/required.cfg            // **THIS LINE** initialise my HUD
+stuffcmds                        // stuff command line statements
+startupmenu                        // open initial menu screen
+sv_unlockedchapters 99            // allow backgrounds to display 

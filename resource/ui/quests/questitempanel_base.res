@@ -114,7 +114,7 @@
 				{
 					"ControlName"	"ImagePanel"
 					"fieldName"		"PaperImage"
-					"xpos"			"0"
+					"xpos"			"9"
 					"ypos"			"0"
 					"zpos"			"1"
 					"wide"			"f0"

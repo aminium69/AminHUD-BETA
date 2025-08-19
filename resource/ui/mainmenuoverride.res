@@ -1,3 +1,5 @@
+#base "../tools.res"
+
 "Resource/UI/MainMenuOverride.res"
 {
 	MainMenuOverride
@@ -161,6 +163,175 @@
 		}
 	}
 	
+	    "DashboardDimmer"        // allows for clicking off playlist frames
+    {
+        "wide"                "f0"
+        "tall"                "f0"
+        "paintbackground"    "0"
+        "paintborder"        "0"
+        "roundedcorners"    "0"
+        //"defaultBgColor_override"        "0 0 0 255"
+        //"armedBgColor_override"        "255 255 255 255"
+    }
+
+
+"MainMenu_HUDTools"
+{
+	"ControlName"	"CExButton"
+	"fieldName"		"MainMenu_HUDTools"
+	"xpos"			"c-100"
+	"ypos"			"30"   // position under Quit
+	"wide"			"200"
+	"tall"			"40"
+	"labeltext"		"HUD Tools"
+	"textAlignment" "center"
+	"font"			"NeufreitBold16"
+	"paintbackground" "0"
+	"visible"		"1"
+	"enabled"		"1"
+	"Command"		"engine cl_mainmenu_safemode 1"
+	
+	"defaultFgColor_override"   "235 226 202 255"   // idle
+    "armedFgColor_override"     "255 255 255 255"   // hover white
+    "depressedFgColor_override" "128 128 128 255"   // pressed gray
+}
+
+	"SafeMode"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"SafeMode"
+		"xpos"				"150"
+		"ypos"				"150"
+		"zpos"				"200"
+		"wide"				"345"
+		"tall"				"230"
+		"visible"			"0"
+		"paintbackground"	"1"
+		"paintborder"		"0"
+		"bgcolor_override"	"TransparentBlack"
+		"PaintBackgroundType"	"0"
+
+		"MOTD_HeaderContainer"
+		{
+			"ControlName"		"EditablePanel"
+			"fieldName"			"MOTD_HeaderContainer"
+			"xpos"				"0"
+			"ypos"				"0"
+			"wide"				"345"
+			"tall"				"22"
+			"visible"			"1"
+			"bgcolor_override"	"77 116 85 255"
+
+			"HeaderLabel"
+			{
+				"ControlName"			"Label"
+				"fieldName"				"HeaderLabel"
+				"font"					"NeufreitBold18"
+				"textAlignment"			"center"
+				"xpos"					"-35"
+				"ypos"					"0"
+				"wide"					"345"
+				"tall"					"22"
+				"autoResize"			"0"
+				"pinCorner"				"0"
+				"visible"				"1"
+				"enabled"				"1"
+				"paintbackground" 		"0"
+				"fgcolor_override"		"TanLight"
+				"labelText"				"#TF_OptionCategory_HUD"
+				"allcaps"				"1"
+			}
+		}
+
+		"MOTD_CloseButton"
+		{
+			"ControlName"		"CExImageButton"
+			"fieldName"			"MOTD_CloseButton"
+			"xpos"				"210"
+			"ypos"				"24"
+			"zpos"				"16"
+			"wide"				"60"
+			"tall"				"20"
+			"autoResize"		"0"
+			"pinCorner"			"0"
+			"visible"			"1"
+			"enabled"			"1"
+			"tabPosition"		"0"
+			"labeltext"			"CLOSE"
+			"font"				"NeufreitBold16"
+			"textAlignment"		"center"
+			"dulltext"			"0"
+			"brighttext"		"0"
+			"default"			"0"
+			"actionsignallevel"	"2"
+			"Command"			"engine cl_mainmenu_safemode 0"
+			"paintbackground"	"0"
+
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+
+			"defaultFgColor_override" 	"TanLight"
+			"armedFgColor_override" 	"LightRed"
+			"depressedFgColor_override" "TanLight"
+		}
+
+		"MOTD_HeaderIcon"
+		{
+			"ControlName"			"ImagePanel"
+			"fieldName"				"MOTD_HeaderIcon"
+			"xpos"					"9999"
+		}
+
+		"MOTD_Label"
+		{
+			"ControlName"			"CExLabel"
+			"fieldName"				"MOTD_Label"
+			"xpos"					"9999"
+		}
+
+		"MOTD_TitleImageBg"
+		{
+			"ControlName"			"ImagePanel"
+			"fieldName"				"MOTD_TitleImageBg"
+			"xpos"					"9999"
+		}
+
+		"MOTD_TitleImageContainer"
+		{
+			"ControlName"			"EditablePanel"
+			"fieldName"				"MOTD_TitleImageContainer"
+			"xpos"					"9999"
+		}
+
+		"MOTD_TextScroller"
+		{
+			"ControlName"			"ScrollableEditablePanel"
+			"fieldName"				"MOTD_TextScroller"
+			"xpos"					"9999"
+		}
+
+		"MOTD_URLButton"
+		{
+			"ControlName"			"CExButton"
+			"fieldName"				"MOTD_URLButton"
+			"xpos"					"9999"
+		}
+
+		"MOTD_PrevButton"
+		{
+			"ControlName"			"CExImageButton"
+			"fieldName"				"MOTD_PrevButton"
+			"xpos"					"9999"
+		}
+
+		"MOTD_NextButton"
+		{
+			"ControlName"			"CExImageButton"
+			"fieldName"				"MOTD_NextButton"
+			"xpos"					"9999"
+		}	
+} 
+
 	"Background"
 	{
 		"ControlName"	"ScalableImagePanel"
@@ -369,8 +540,8 @@
 	{
 		"ControlName"	"Label"
 		"fieldName"		"NoGCMessage"   // fix later xbox things
-		"xpos"			"c-290"
-		"ypos"			"94"
+		"xpos"			"c-310"
+		"ypos"			"70"
 		"zpos"			"-99"
 		"wide"			"260"
 		"tall"			"100"
@@ -1864,11 +2035,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"SafeMode"
-		"xpos"			"c-290"
-		"ypos"			"210"
+		"xpos"			"300"
+		"ypos"			"70"
 		"zpos"			"-50"
-		"wide"			"270"
-		"tall"			"190"
+		"wide"			"285"
+		"tall"			"300"
 		"visible"		"0"
 
 		"Background"
@@ -1878,7 +2049,7 @@
 			"xpos"			"0"
 			"ypos"			"20"
 			"zpos"			"0"
-			"wide"			"260"
+			"wide"			"285"
 			"tall"			"p0.88"
 			"visible"		"1"
 			"PaintBackgroundType"	"0"
@@ -1894,8 +2065,8 @@
 				"font"			"HudFontSmallBold"
 				"labelText"		"#MMenu_SafeMode_Title"
 				"textAlignment"	"west"
-				"xpos"			"0"
-				"ypos"			"0"
+				"xpos"			"9999"
+				"ypos"			"9999"
 				"wide"			"f0"
 				"tall"			"30"
 				"autoResize"	"0"
@@ -1906,12 +2077,271 @@
 				"fgcolor_override"	"235 227 203 255"
 			}
 	
+		    "ViewmodelLabel"
+            {
+            "ControlName"      "CExLabel"
+            "fieldName"        "ViewmodelLabel"
+	        "fgcolor"          "235 226 202 255"
+            "xpos"             "-43"
+            "ypos"             "35"
+            "wide"             "200"
+            "tall"             "30"
+            "labelText"        "Viewmodel FOV"
+            "font"             "NeufreitBold16"
+            "textAlignment"    "center"
+
+            "visible"          "1"
+            "enabled"          "1"
+            "mouseinputenabled" "0"
+            }	
+	
+			"ViewmodelSlider"
+		    {
+			"ControlName"			"CCvarSlider"
+			"fieldName"				"ViewmodelSlider"
+			"xpos"					"115"
+			"ypos"					"40"
+			"wide"					"150"
+			"tall"					"30"
+			"minvalue"				"54"
+			"maxvalue"				"90"
+			"cvar_name"				"viewmodel_fov"
+			"allowoutofrange"		"0"
+		    }
+	
+			"SoundLabel"
+            {
+            "ControlName"      "CExLabel"
+            "fieldName"        "SoundLabel"
+	        "fgcolor"          "235 226 202 255"
+            "xpos"             "-74"
+            "ypos"             "65"
+            "wide"             "200"
+            "tall"             "30"
+            "labelText"        "Sound"
+            "font"             "NeufreitBold16"
+            "textAlignment"    "center"
+
+            "visible"          "1"
+            "enabled"          "1"
+            "mouseinputenabled" "0"
+            }	
+	
+		    "SoundSlider"
+		    {
+			"ControlName"			"CCvarSlider"
+			"fieldName"				"SoundSlider"
+			"xpos"					"53"
+			"ypos"					"70"
+			"wide"					"150"
+			"tall"					"30"
+			"minvalue"				"0"
+			"maxvalue"				"1.0"
+			"cvar_name"				"volume"
+			"allowoutofrange"		"0"
+		    }
+	
+			"VoiceVolumeLabel"
+		    {
+			"ControlName"			"CExLabel"
+			"fieldName"				"VoiceVolumeLabel"
+			"xpos"					"-34"
+			"ypos"					"108"
+			"wide"					"150"
+			"tall"					"11"
+			"autoResize"			"0"
+			"pinCorner"				"0"
+			"visible"				"1"
+			"enabled"				"1"
+			"labelText"				"VC Volume"
+			"font"					"NeufreitBold16"
+			"textAlignment"			"center"
+		    }
+	
+		"VoiceVolumeSlider"
+		{
+			"ControlName"			"CCvarSlider"
+			"fieldName"				"VoiceVolumeSlider"
+			"xpos"					"82"
+			"ypos"					"105"
+			"wide"					"150"
+			"tall"					"30"
+			"minvalue"				"0"
+			"maxvalue"				"1.0"
+			"cvar_name"				"voice_scale"
+			"allowoutofrange"		"0"
+		}
+		
+		"ChatLabel"
+{
+    "ControlName"        "CExLabel"
+    "fieldName"          "ChatLabel"
+    "xpos"               "-53"
+    "ypos"               "133"
+    "wide"               "150"
+    "tall"               "25"
+    "labelText"          "Chat"
+    "font"               "NeufreitBold16"
+    "textAlignment"      "center"
+    "fgcolor_override"   "TanLight"
+
+    "visible"            "1"
+    "enabled"            "1"
+    "mouseinputenabled"  "0"
+}		
+
+			"ChatButton"
+			{
+				"controlName"					"CExButton"
+				"fieldName"						"ChatButton"
+				"xpos"							"-5"
+				"ypos"							"133"
+				"wide"							"150"
+				"tall"							"26"
+				"visible"						"1"
+				"enabled"						"1"
+				"labelText"						"TOGGLE"
+				"command"						"engine toggle hud_saytext_time 10 0"
+				"actionsignallevel"				"3"
+				"paintbackground"				"0"
+				"font"							"NeufreitBold16"
+				"textAlignment"					"center"
+				"sound_depressed"				"UI/buttonclick.wav"
+				"sound_released"				"UI/buttonclickrelease.wav"
+			}
+
+			"ChatCheckbox"
+			{
+				"ControlName"					"CvarToggleCheckButton"
+				"fieldName"						"ChatCheckbox"
+				"xpos"							"100"
+				"ypos"							"133"
+				"wide"							"150"
+				"tall"							"26"
+				"proportionaltoparent"			"1"
+				"font"							"HudFontSmall"
+				"labeltext"						""
+				"textAlignment"					"center"
+				"smallcheckimage"				"1"
+				"button_activation_type"		"1"
+				"cvar_name"						"hud_saytext_time"
+				"mouseinputenabled"				"0"
+			}
+
+		"VoiceLabel"
+{
+    "ControlName"        "CExLabel"
+    "fieldName"          "VoiceLabel"
+    "xpos"               "-53"
+    "ypos"               "165"
+    "wide"               "150"
+    "tall"               "25"
+    "labelText"          "VC"
+    "font"               "NeufreitBold16"
+    "textAlignment"      "center"
+    "fgcolor_override"   "TanLight"
+
+    "visible"            "1"
+    "enabled"            "1"
+    "mouseinputenabled"  "0"
+}		
+
+			"VoiceButton"
+			{
+				"controlName"					"CExButton"
+				"fieldName"						"VoiceButton"
+				"xpos"							"-5"
+				"ypos"							"165"
+				"wide"							"150"
+				"tall"							"26"
+				"visible"						"1"
+				"enabled"						"1"
+				"labelText"						"TOGGLE"
+				"command"						"engine toggle voice_enable 1 0"
+				"actionsignallevel"				"3"
+				"paintbackground"				"0"
+				"font"							"NeufreitBold16"
+				"textAlignment"					"center"
+				"sound_depressed"				"UI/buttonclick.wav"
+				"sound_released"				"UI/buttonclickrelease.wav"
+			}
+
+			"VoiceCheckbox"
+			{
+				"ControlName"					"CvarToggleCheckButton"
+				"fieldName"						"VoiceCheckbox"
+				"xpos"							"100"
+				"ypos"							"165"
+				"wide"							"150"
+				"tall"							"26"
+				"proportionaltoparent"			"1"
+				"font"							"HudFontSmall"
+				"labeltext"						""
+				"textAlignment"					"center"
+				"smallcheckimage"				"1"
+				"button_activation_type"		"1"
+				"cvar_name"						"voice_enable"
+				"mouseinputenabled"				"0"
+			}
+
+		"MinmodeToggle"
+		{
+			"ControlName"			"EditablePanel"
+			"fieldName"				"MinmodeToggle"
+			"xpos"					"-35"
+			"ypos"				    "190"
+			"zpos"					"16"
+			"wide"					"150"
+			"tall"					"26"
+			"visible"				"1"
+			"enabled"				"1"
+			"proportionaltoparent"	"1"
+        }
+
+			"MinmodeButton"
+			{
+				"controlName"					"CExButton"
+				"fieldName"						"MinmodeButton"
+				"xpos"							"100"
+				"ypos"							"190"
+				"wide"							"170"
+				"tall"							"26"
+				"visible"						"1"
+				"enabled"						"1"
+				"labelText"						""
+				"command"						"engine toggle cl_hud_minmode"
+				"actionsignallevel"				"3"
+				"paintbackground"				"0"
+				"font"							"NeufreitBold16"
+				"textAlignment"					"center"
+				"sound_depressed"				"UI/buttonclick.wav"
+				"sound_released"				"UI/buttonclickrelease.wav"
+			}
+			
+			"MinmodeCheckbox"
+			{
+				"ControlName"					"CvarToggleCheckButton"
+				"fieldName"						"MinmodeCheckbox"
+				"xpos"							"100"
+				"ypos"							"190"
+				"wide"							"170"
+				"tall"							"26"
+				"proportionaltoparent"			"1"
+				"font"							"NeufreitBold16"
+				"labeltext"						"Minmode HUD"
+				"textAlignment"					"center"
+				"smallcheckimage"				"1"
+				"button_activation_type"		"1"
+				"cvar_name"						"cl_hud_minmode"
+				"mouseinputenabled"				"0"
+			}
+
 			"SaveSettingsButton"
 			{
 				"ControlName"	"CExButton"
 				"fieldName"		"SaveSettingsButton"
-				"xpos"			"p0.02"
-				"ypos"			"rs1-30"
+				"xpos"			"9999"
+				"ypos"			"9999"
 				"zpos"			"11"
 				"wide"			"250"
 				"tall"			"26"
@@ -1947,8 +2377,8 @@
 			{
 				"ControlName"	"CExButton"
 				"fieldName"		"SubButton"
-				"xpos"			"p0.02"
-				"ypos"			"rs1-5"
+				"xpos"			"9999"
+				"ypos"			"9999"
 				"zpos"			"11"
 				"wide"			"250"
 				"tall"			"26"
@@ -1983,8 +2413,8 @@
 			{
 				"ControlName"			"Label"
 				"fieldName"				"Explanation"
-				"xpos"					"cs-0.5"
-				"ypos"					"30"
+				"xpos"					"9999"
+				"ypos"					"9999"
 				"zpos"					"100"
 				"wide"					"p0.92"
 				"tall"					"p0.5"
@@ -2005,8 +2435,8 @@
 		{
 			"ControlName"			"ImagePanel"
 			"fieldName"				"InfoImage"
-			"xpos"					"rs1-5"
-			"ypos"					"5"
+			"xpos"					"9999"
+			"ypos"					"9999"
 			"zpos"					"100"
 			"wide"					"40"
 			"tall"					"o1"

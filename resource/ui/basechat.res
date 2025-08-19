@@ -7,7 +7,7 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"2"	[$WIN32]
-		"ypos"			"160"
+		"ypos"			"187"
 		"ypos_hidef"		"245"
 		"wide"	 		"280"
 		"tall"	 		"120"

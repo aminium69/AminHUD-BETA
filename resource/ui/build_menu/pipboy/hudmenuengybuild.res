@@ -112,8 +112,8 @@
 		"xpos"			"25"
 		"ypos"			"47"
 		"zpos"			"1"
-		"wide"			"100"
-		"tall"			"124"
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"1"
 	}	
 	
